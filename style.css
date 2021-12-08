@@ -89,6 +89,7 @@ img, fieldset {
 #header {
 	position: absolute;
 	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.8);
 	width: 100%;
 	height: 80px;
 	z-index: 100;
@@ -98,7 +99,7 @@ img, fieldset {
 	float: left;
 }
 #header .logo img {
-	height: 50px;
+	height: 40px;
 }
 #header .inner {
 	max-width: 1200px;
@@ -118,7 +119,7 @@ img, fieldset {
 	text-align: center;
 	padding: 25px;
 	text-decoration: none;
-	font-weight: 800;
+	font-weight: bold;
 	font-size: 1.2em;
 	line-height: 30px;
 	color: #000;
@@ -179,8 +180,7 @@ img, fieldset {
 
 .main_cover {
 	position: relative;
-	height: 700px;
-	padding-top: 80px;
+	height: 800px;
 	z-index: 0;
 }
 .main_cover img {
@@ -204,7 +204,7 @@ img, fieldset {
 	position: absolute;
 	width: 100%;
 	top: 250px;
-	color: #fff;
+	color: #000;
 }
 .main_cover .slogan .box {
     max-width: 1200px;
@@ -233,12 +233,13 @@ img, fieldset {
     position: absolute;
     box-sizing: border-box;
     right: 20px;
-    bottom: -200px;
+    bottom: -250px;
     padding: 30px;
     width: 160px;
 	height: 100px;
     font-weight: 800;
     background-color: #005abc;
+	color: #fff;
 }
 .main_cover .paging_box .current_page {
 	font-size: 2em;
@@ -263,7 +264,8 @@ img, fieldset {
 }
 .button a {
     display: block;
-    border: 1px solid #fff;
+	background-color: #005abc;
+    /* border: 1px solid #005abc; */
 	width: 250px;
     height: 60px;
     font-size: 1.2em;
@@ -274,11 +276,11 @@ img, fieldset {
     color: #fff;
 }
 .button a:hover {
-	background-color: #005abc;
+	background-color: #000;
 	transition: .3s;
 }
 .slick_main .item {
-	height: 700px;
+	height: 800px;
 	background-size: cover;
 	background-position: center;
 }
@@ -297,10 +299,10 @@ img, fieldset {
 	bottom: 50px;
 }
 .slick-dots li.slick-active button:before {
-    color: #fff;
+    color: #000;
 }
 .slick-dots li button:before {
-    color: #fff;
+    color: #000;
 }
 
 /* content_box */
@@ -341,7 +343,7 @@ img, fieldset {
 	float: left;
 	width: 45%;
     height: 500px;
-	background: url(images/cb1_img.jpg) 50% 50% no-repeat;
+	background: url(images/cb1_img.png) 50% 50% no-repeat;
 	background-size: cover;
 }
 .content_box .cb1_img .square1 {
@@ -395,6 +397,88 @@ img, fieldset {
 	font-size: 1.2em;
 	line-height: 1.5;
 }
+
+/* ######################### */
+
+/** image_content **/
+
+.content_box .cb2_content li {
+	display: table;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: 50px;
+  }
+  .content_box .cb2_content .image {
+	display: table-cell;
+	width: 55.5%;
+	height: 450px;
+  }
+  .content_box .cb2_content .image_box {
+	width:100%;
+	height: 450px;
+  }
+  .content_box .cb2_content .text {
+	display: table-cell;
+	width: 44.5%;
+	padding-left: 40px;
+	  padding-right: 20px;
+	vertical-align: middle;
+  }
+  .content_box .cb2_content .text_box {
+	display: table;
+	height: 100%;
+  }
+  .content_box .cb2_content .text_content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+  }
+  .content_box .cb2_content .text_content h1 {
+	  font-size: 2em;
+	  font-weight: 800;
+  }
+  .content_box .cb2_content .text_content p {
+	margin-top: 30px;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .content_box .cb2_content li:nth-child(2n-1) .image {
+	float:right;
+  }
+  .content_box .cb2_content li:nth-child(2n-1) .text {
+	display: inline-block;
+	position: absolute;
+	width: calc(44.5% - 60px);
+	height: 100%;
+	padding-left: 20px;
+	padding-right: 40px;
+  }
+  
+  .content_box #cb2_content_img_id_1 {
+	  background: url(images/cb2_img1.png);
+	  background-position: center;
+	  background-size: cover;
+  }
+  .content_box #cb2_content_img_id_2 {
+	  background: url(images/cb2_img2.png);
+	  background-position: center;
+	  background-size: cover;
+  }
+  .content_box #cb2_content_img_id_3 {
+	  background: url(images/cb2_img3.png);
+	  background-position: center;
+	  background-size: cover;
+  }
+  .content_box #cb2_content_img_id_4 {
+	  background: url(images/cb2_img4.png);
+	  background-position: center;
+	  background-size: cover;
+  }
+
+  /* ================================== */
+
+
 .content_box .cb2_list {
 	width: 100%;
 	font-size: 0;
@@ -515,6 +599,7 @@ img, fieldset {
 	display: inline-block;
 	vertical-align: top;
 	width: 33%;
+	height: 160px;
 	padding: 0 2%;
 	box-sizing: border-box;
 	border-right: 1px solid rgba(255,255,255,0.5);
@@ -530,6 +615,10 @@ img, fieldset {
 }
 .content_box .cb3_background ul li h2 {
 	margin-top: 20px;
+}
+.content_box .cb3_background ul li p {
+	font-size: 1.2em;
+	margin-top: 5px;
 }
 .top_button {
 	position: fixed;
@@ -566,7 +655,7 @@ img, fieldset {
 		height: 60px;
 	}
 	#header .logo img {
-		height: 40px;
+		height: 30px;
 	}
 	#header .mobile-menu {
 		display: block;
@@ -739,7 +828,7 @@ img, fieldset {
 /* Media Screen - Mobile */
 @media screen and (max-width:767px) {
 	#header .logo img {
-		height: 40px;
+		height: 30px;
 	}
 	.main_cover {
 		height: 500px;
@@ -788,6 +877,33 @@ img, fieldset {
 	.content_box .cb1_text p {
 		margin-top: 20px;
 	}
+
+	/* ========================= */
+
+	.content_box .cb2_content .image {
+		display: inline-block;
+		width: 100%;
+	}
+	.content_box .cb2_content .text {
+		display: inline-block;
+		width: unset;
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.content_box .cb2_content li:nth-child(2n-1) .text {
+		display: inline-block;
+		position: relative;
+		width: unset;
+		height: 100%;
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* ========================= */
+
+
 	.content_box .cb2_list li {
 		width: 100%;
 		height: 300px;
@@ -836,7 +952,9 @@ img, fieldset {
 }
 
 @media screen and (max-width:480px) {
-
+	.content_box .cb2_content .image {
+		height: 300px;
+	}
 }
 
 @media screen and (max-width:360px) {
