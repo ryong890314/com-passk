@@ -111,7 +111,7 @@ img, fieldset {
 }
 #gnb .main_ul li {
 	float: left;
-	width: 150px;
+	width: 180px;
 }
 #gnb .main_ul > li > a {
 	display: block;
